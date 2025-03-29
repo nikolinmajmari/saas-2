@@ -22,7 +22,7 @@ spec:
       source:
         repoURL: 'https://github.com/nikolinmajmari/odoo-saas.git'
         targetRevision: HEAD
-        path: helm
+        path: helm/templates
         helm:
           parameters:
             - name: namespace
