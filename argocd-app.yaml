@@ -13,7 +13,7 @@ spec:
         requeueAfterSeconds: 60
   template:
     metadata:
-      name: 'odoo-estate-{{.branch}}-{{.number}}'
+      name: 'odoo-estate-2-{{.branch}}-{{.number}}'
     spec:
       destination:
         namespace: 'preview-{{.branch}}'
@@ -26,7 +26,7 @@ spec:
         helm:
           parameters:
             - name: namespace
-              value: 'preview-{{.branch}}'
+              value: 'preview-2-{{.branch}}'
             - name: version
               value: 'latest'
             - name: image
