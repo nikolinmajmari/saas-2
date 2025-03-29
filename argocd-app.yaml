@@ -19,9 +19,6 @@ spec:
         namespace: 'preview-{{.branch}}'
         server: 'https://kubernetes.default.svc'
       project: default
-      syncPolicy:
-        syncOptions:
-        - CreateNamespace=true 
       source:
         repoURL: 'https://github.com/nikolinmajmari/odoo-saas.git'
         targetRevision: HEAD
@@ -38,8 +35,6 @@ spec:
               value: saas
   project: default
   syncPolicy:
-    syncOptions:
-    - CreateNamespace=true 
     automated:
       prune: true
       selfHeal: true
