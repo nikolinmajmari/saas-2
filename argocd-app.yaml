@@ -19,6 +19,9 @@ spec:
         namespace: 'preview-{{.branch}}'
         server: 'https://kubernetes.default.svc'
       project: default
+      syncPolicy:
+        syncOptions:
+        - CreateNamespace=true 
       source:
         repoURL: 'https://github.com/nikolinmajmari/odoo-saas.git'
         targetRevision: HEAD
