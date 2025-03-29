@@ -28,7 +28,7 @@ spec:
             - name: namespace
               value: 'preview-{{.branch}}'
             - name: version
-              value: '{{.head_sha}}'
+              value: 'latest'
             - name: image
               value: odoo_estate
             - name: name
